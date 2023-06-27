@@ -1,1 +1,39 @@
+body {
+    background-image: url(https://beautifulphotos.thms.uk/my-img/100_0085.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #8a2be2;
+}
 
+h1 {
+    text-align: center;
+}
+.testgame{
+    background-color: #ffffff;
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+#start {
+    background-color: rgb(0, 255, 0);
+    position: absolute;
+    bottom: 0px;
+}
+#stop{
+    background-color: rgb(225,0, 0);
+    position: absolute;
+    bottom: 0px;
+}
+.gameimages {
+    width:20%;
+}
+#timeIsUp{
+    background-color: #ffffff;
+    position: relative;
+    font-size: 50px;
+}
+#resetGame{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
