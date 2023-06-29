@@ -5,7 +5,10 @@ function start() {
     var c=15;
     Timerinterval=setInterval(function intervalfunc(){c=c-1; document.getElementById("time").innerHTML=c;
 if(c===0){clearInterval(Timerinterval);document.getElementById("testgame").style.display="none";
-document.getElementById("timeIsUp").style.display="block";};},1000)
+console.clear();
+document.getElementById("timeIsUp").style.display="block";window.removeEventListener("keydown",(event)=>{});
+};},1000);
+startsprites();
 }
 
 function stop(){
@@ -14,6 +17,8 @@ function stop(){
     clearInterval(Timerinterval);
     c=15;
     document.getElementById("time").innerHTML=c;
+    window.removeEventListener("keydown",(event)=>{});
+    console.clear();
 }
 function resetGame() {
     document.getElementById("testgame").style.display="block";
@@ -25,3 +30,8 @@ function resetGame() {
     document.getElementById("time").innerHTML=c;
 
 } 
+function startsprites() {
+    window.addEventListener("keydown",(event)=>{
+    console.log("key has been pressed");
+    });
+}
