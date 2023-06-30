@@ -36,7 +36,7 @@ function startsprites() {
 function eventfuncton(event){
     //enter key:
     if (event.keyCode == 13) {
-        console.log("enter key has been presed")
+        console.log("enter key has been presed");
     }
     //down key:
    else if (event.keyCode == 40) {
