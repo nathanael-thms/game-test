@@ -10,7 +10,7 @@ h1 {
 }
 .testgame{
     background-color: #ffffff;
-    width: 50%;
+    width: 1000px;
     height: 500px;
     position: relative;
 }
@@ -26,6 +26,7 @@ h1 {
 }
 .gameimages {
     width:20%;
+    height: 150px;
 }
 #timeIsUp{
     background-color: #ffffff;
@@ -36,4 +37,17 @@ h1 {
     position: absolute;
     bottom: 0px;
     left: 0px;
+}
+#cop {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+}
+#robber {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.white{
+    background-color: #ffffff;
 }
