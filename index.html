@@ -14,12 +14,19 @@
   <body>
     <h1> Game test:home </h1>
 
-    <div id="timeIsUp" style="display: none;">
-      Time is up
+    <div id="timeIsUp" class="timeIsUp" style="display: none;">
+      The robber won
       <br>
       <br>
       <button id="resetGame" onclick="resetGame()"> Reset </button>
       
+    </div>
+    <div style="display: none;" class="timeIsUp" id="copwin">
+        The cop won
+        <br>
+        <br>
+        <button id="resetGame" onclick="resetGame()"> Reset </button>
+        
     </div>
     <br>
       <br>
@@ -35,9 +42,10 @@
     <br>
       <br>
     
-    <div style="background-color: #1eff00;"> Make the cop catch the robber with
-      keyboard keys click enter for speedboost witch will make the cop go in a 
-      straight line super fast</div>
+    <div style="background-color: #1eff00;"> 
+      How To Play: (2 Players needed I player is cop the other player is the robber) cop moves with keyboard keys and robber moves the mouse(nor cop or robber will go out of the white box) the cop has to dissapear behind the robber for the cop to win
+     </div>
+      
     
     
   </body>
