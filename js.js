@@ -152,6 +152,7 @@ function eventfuncton(event){
         window.removeEventListener("keydown",eventfuncton);
         let parent=document.getElementById("testgame");
         parent.removeEventListener("mousemove",mousefunc);
+        console.clear();
     }
     
 }
