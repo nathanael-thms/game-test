@@ -16,10 +16,10 @@ function start() {
     parent.removeEventListener("mousemove",mousefunc);
     document.getElementById("parentTime").style.display="none";
     document.getElementById("cop").style.top="0px";
-    document.getElementById("cop").style.left="0px";
+    document.getElementById("cop").style.right="150px";
+    document.getElementById("cop").style.left="850px"
     document.getElementById("robber").style.top="0px";
-    document.getElementById("robber").style.right="150px";
-    document.getElementById("robber").style.left="850px";
+    document.getElementById("robber").style.left="0px";
 };
     },1000);
 startsprites();
@@ -32,10 +32,10 @@ function stop(){
     document.getElementById("stop").style.display="none";
     document.getElementById("start").style.display="block";
     document.getElementById("cop").style.top="0px";
-    document.getElementById("cop").style.left="0px";
+    document.getElementById("cop").style.right="150px";
+    document.getElementById("cop").style.left="850px"
     document.getElementById("robber").style.top="0px";
-    document.getElementById("robber").style.right="150px";
-    document.getElementById("robber").style.left="850px"; 
+    document.getElementById("robber").style.left="0px";
     clearInterval(Timerinterval);
     c=15;
     document.getElementById("time").innerHTML=c;
@@ -59,10 +59,10 @@ function resetGame() {
     parent.removeEventListener("mousemove",mousefunc);
     document.getElementById("parentTime").style.display="none";
     document.getElementById("cop").style.top="0px";
-    document.getElementById("cop").style.left="0px";
+    document.getElementById("cop").style.right="150px";
+    document.getElementById("cop").style.left="850px"
     document.getElementById("robber").style.top="0px";
-    document.getElementById("robber").style.right="150px";
-    document.getElementById("robber").style.left="850px";
+    document.getElementById("robber").style.left="0px";
     document.getElementById("parentTime").style.display="inline";
     
 
@@ -143,7 +143,7 @@ function eventfuncton(event){
     robber.Left=document.getElementById("robber").offsetLeft;
     var TopvsTop=Math.round(cop.Top/5)-Math.round(robber.Top/5);
     var LeftvsLeft=Math.round(cop.Left/5)-Math.round(robber.Left/5);
-    if (TopvsTop>0 && TopvsTop<155 || LeftvsLeft>0 && LeftvsLeft<155) {
+    if (TopvsTop>0 && TopvsTop<200 && LeftvsLeft>0 && LeftvsLeft<200) {
         document.getElementById("testgame").style.display="none";
         document.getElementById("copwin").style.display="block";
         document.getElementById("parentTime").style.display="none";
